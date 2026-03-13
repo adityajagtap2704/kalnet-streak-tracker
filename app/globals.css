@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@400;500;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Clash Display', 'Georgia', serif;
+  --font-body: 'Cabinet Grotesk', system-ui, sans-serif;
+  --color-lime: #C8F135;
+  --color-violet: #6B21FF;
+  --color-dark: #0D0D0D;
+  --color-card: #161616;
+  --color-muted: #2A2A2A;
+  --color-text: #F0F0F0;
+  --color-sub: #888888;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-dark);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-display);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-lime {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(200,241,53,0.4); }
+  50%       { box-shadow: 0 0 0 12px rgba(200,241,53,0); }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-up { animation: fadeUp 0.5s ease forwards; }
+.animate-fade-up-1 { animation: fadeUp 0.5s 0.1s ease both; }
+.animate-fade-up-2 { animation: fadeUp 0.5s 0.2s ease both; }
+.animate-fade-up-3 { animation: fadeUp 0.5s 0.3s ease both; }
+.animate-fade-up-4 { animation: fadeUp 0.5s 0.4s ease both; }
+.animate-count { animation: countUp 0.6s 0.3s cubic-bezier(0.34,1.56,0.64,1) both; }
+.pulse-lime { animation: pulse-lime 2s infinite; }
