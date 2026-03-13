@@ -3,7 +3,7 @@
 A **full-stack** Daily Learning Streak Tracker built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**.
 
 ## Live Demo
-Deploy to Vercel — see Deployment section below.
+Deploy to Vercel — https://kalnet-streak-tracker-tk8g.vercel.app/
 
 ---
 
